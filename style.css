@@ -1,0 +1,100 @@
+/* Importando fonte */
+/* Roboto slab */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+
+
+/* Zerando os valores de margem padrao do navegador, e definindo o tamanho da caixa para "até a borda" */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* estilizando o header */
+
+header nav{
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    background-color: #c2394a;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    font-family: 'Roboto Slab', serif;
+}
+/* Logo img */
+#LogoMarca img{
+    height: 7vh;
+}
+/* Caixa dos links */
+header section.links-cabecalho {
+    display: flex;
+    gap: 4vw;
+}
+/* estilização e volta do efeito do link */
+header section a {
+    transition: transform .5s;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+
+}
+/* efeitos dos links */
+header section:not(#buttons) a:hover{
+    transition: transform .5s;
+    transform: scale(1.2) ;
+    color: #E9B8B8;
+}
+/* caixa dos botões */
+section#buttons {
+    display: flex;
+    gap: 4vh;
+    justify-content: space-between;
+}
+/* Estilização dos botões */
+section#buttons a.button-login {
+    padding: 1vh 2vw ;
+    border: 4px solid #a36868;
+    border-radius: 10px;
+    background-color: #d18a8a;
+}
+
+section#buttons a.button-register {
+    padding: 1vh 1.5vw ;
+    border: 4px solid #d18a8a;
+    border-radius: 10px;
+    background-color: #a36868;
+}
+/* animação dos botões */
+section#buttons a.button-login:hover{
+     transition: transform .5s;
+     transform: scale(1.1) ;
+}
+
+section#buttons a.button-register:hover{
+    transition: transform .5s;
+    transform: scale(1.1) ;
+}
+
+/* começo do main */
+
+
+
+
+footer {
+    display: flex;
+    width: 100%;
+    height: 5vh;
+    background-color: #c2394a;
+    position: relative;
+    /* TODO: Talvez precise alterar */
+    margin-top: 100%; 
+    font-family: 'Roboto Slab', serif;
+    color: white;
+}
+
+footer section#copyright {
+    margin: auto;
+}

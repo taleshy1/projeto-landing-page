@@ -76,7 +76,7 @@ As empresas fictícias vão desde um banco digital a uma empresa de seguros, pas
   [Logo aqui](https://labenu.notion.site/Projeto-Landing-Page-WFS-7b37ff1460e741b1b5e1e049d7df9d69)
    </details>
 O enunciado completo está no Sistema de Estudante, na sessão de Projetos https://estudante.labenu.com.br/conteudos/tecnico/projetos
-
+// TODO
 ## Lista de requisitos
 A sua Landing Page deve conter:
 
@@ -84,7 +84,7 @@ A sua Landing Page deve conter:
 	
 - [ ] **Logomarca:** A logomarca fornecida pelo cliente, que deve ser apresentada de forma clara e em um local estratégico da página.	
 
-- [ ] **Paleta de cores:** Uma paleta de cores baseada na logomarca fornecida pelo cliente.	
+- [x] **Paleta de cores:** Uma paleta de cores baseada na logomarca fornecida pelo cliente.	
 
 - [ ] **Cabeçalho e Rodapé:** O cabeçalho deve conter informações importantes sobre a sua empresa, como  botões de navegação e opções de contato. Já o rodapé pode incluir informações adicionais, como endereço e links de redes sociais.
 
