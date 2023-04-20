@@ -1,0 +1,115 @@
+/* Importando fonte */
+/* Roboto slab */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-9');
+
+
+/* Zerando os valores de margem padrao do navegador, e definindo o tamanho da caixa para "até a borda" */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', 'Helvetica 25 UltraLight', 'Helvetica 35 Thin', 'Helvetica 45 Light', 'Helvetica 55 Roman', 'Helvetica 65 Medium', serif;
+}
+
+/* estilizando o header */
+.body-until-footer {
+    height: 100vh;
+    width: 100vw;
+    background-color: #ffffff;
+
+}
+header {
+    display: flex;
+    height: 10%;
+    width: 100%;
+    background-color: #c23949;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow:0 10px 16px 0 rgba(0, 0, 0, 0.137),0 6px 20px 0 rgba(0,0,0,0.19)
+}
+
+nav{
+    width: 95%;
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+div.anchor-box {
+    display: flex;
+    gap: 2%;
+}
+
+div#LogoMarca {
+    margin-left: 5%;
+    width: 5%;
+}
+
+div#LogoMarca img {
+    width: 100%;
+}
+
+/* Caixa dos links */
+header div.links-cabecalho {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+/* estilização e volta do efeito do link */
+header div a {
+    transition: transform .5s;
+    text-decoration: none;
+    font-size: 1.4vw;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.178);
+
+}
+/* efeitos dos links */
+header>nav>div a:hover{
+    transition: transform .5s;
+    transform: scale(1.2) ;
+}
+/* caixa dos botões */
+
+/* Estilização dos botões */
+ a.button-login {
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2vw;
+    padding: .5% .5% ;
+    border-radius: 1vw;
+    background-color: #fbd100c5;
+}
+
+/* animação dos botões */
+ a.button-login:hover{
+     transition: transform .5s;
+     transform: scale(1.2) ;
+}
+
+.btn_icon_header{
+    background: transparent;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    div#LogoMarca {
+        width: 15%;
+        margin-left: 4%;
+    }
+    header div a {
+        font-size: 2.5vw;
+   
+    }
+    a.button-login {
+        font-size: 2.5vw;
+    }
+}
