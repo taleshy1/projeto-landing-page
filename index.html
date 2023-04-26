@@ -7,6 +7,7 @@
     <title>Log4 Logistica</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="fontawesome-free-6.4.0-web/css/all.css" />
+    <script src="script.js"></script>
   </head>
 
   <body>
@@ -16,47 +17,67 @@
           <div class="anchor-box">
             <div id="LogoMarca">
               <a href="">
-                <img src="/assets/logo-recortado.png" alt="" />
+                <img src="/assets/Logo.png" alt=""  />
               </a>
             </div>
-            <div>
-             
-            </div>
+            <div></div>
 
             <div class="links-cabecalho">
-             
-              <a href="">Sobre nós</a>
-              <a href="#envio-rastreio">Rastrear produto</a>
-              <a href=""> Fale conosco</a>
+              <!-- <a href="">SOBRE NÓS</a> -->
+              <a href="">ENVIAR PACOTE</a>
+              <a href="">RASTREAR PACOTE</a>
+              <a href="">FALE CONOSCO</a>
             </div>
           </div>
-          
-          <a href="" class="button-login">Seja entregador</a>
-          
+          <div class="login-register-box">
+            <a href="" class="button-login">LOGIN</a>
+            <a href="" class="register">CADASTRE-SE</a>
+          </div>
         </nav>
       </header>
-      <!-- <main>
-        <section id="envio-rastreio">
-          <section class="container enviar" id="enviar">
-            <aside class="box-caminhao">
-              <img src="assets/caminhao.png" alt="Caminhão da Log4" />
-            </aside>
-            <aside class="box-aside-enviar">
-              <h2>ENVIE SUAS ENCOMENDAS</h2>
-              <p>
-                Confie em nossa empresa de logística para envios seguros e
-                rápidos. Oferecemos rastreamento em tempo real e entrega
-                garantida.
-              </p>
-              <img
-                src="assets/open-box.png"
-                alt="Caixa que representa a encomenda"
-              />
-              <a href="" class="texto-envio-titulo">Enviar pacote</a>
-            </aside>
-          </section>
+      <main>
+        <section class="container" id="presentacion">
+          <h1 class="text-presentacion fade-in">
+            <span class="mova-sua-entrega ">MOVA SUA ENTREGA</span> <BR><span class="pra-frente">PARA FRENTE</span> <BR>COM A GENTE.
+          </h1>
+          <img src="assets/camiao.png" alt="" class="camiao">
+          <img src="assets/Logo Camiao.png" alt="" class="logo-camiao">
         </section>
-      </main> -->
+
+        <section class="container">
+
+          <div class="box-around-itens">
+            
+            <article class="track-the-pack">
+              <p class="text-and-image-sided">
+                RASTREIE <img src="assets/caixa-de-entrega.png" alt="">
+              </p>
+              <p>SEU PACOTE</p>
+              <form action="track.js">
+                <input type="text" placeholder="DIGITE O SEU CODIGO DE RASTREIO">
+              </form>
+            </article>
+            
+            <article class="send-the-pack">
+              <p class="envie-text">ENVIE</p>
+              <p>SEU PACOTE</p>
+              <a href=""><img src="assets/caminhao-de-entrega.png" alt=""></a>
+            </article>
+            
+            <article class="work-here">
+              <p class="seja-text">
+                SEJA
+              </p>
+              <p>
+                ENTREGADOR
+              </p>
+             <a href=""> <img src="assets/entregador.png" alt=""></a>
+            </article>
+          </div>
+
+        </section>
+       
+      </main>
     </div>
     <footer></footer>
   </body>
