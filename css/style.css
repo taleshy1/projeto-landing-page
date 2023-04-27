@@ -470,10 +470,12 @@ textarea {
 }
 /*Formulário*/
 
+
+
 @media screen and (max-width: 1000px) {
   div#LogoMarca {
     width: 15%;
-    margin-left: 4%;
+    /* margin-left: 4%; */
   }
   header div a {
     font-size: 2.5vw;
@@ -484,6 +486,103 @@ textarea {
   .login-register-box {
     gap: 1vh;
   }
+  .box-around-itens {
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+  }
+  .track-the-pack {
+    width: 100%;
+    font-size: 1.5em;
+  }
+  .text-and-image-sided{
+    width: 100%;
+    font-size: 1.5em;
+  }
+  .track-the-pack input {
+    height: 4vh;
+  }
+  .send-the-pack {
+    width: 100%;
+    font-size: 1.5em;
+  }
+  p.envie-text{
+    font-size: 1.8em;
+  }
+
+  .work-here {
+    width: 100%;
+    font-size: 1.5em;
+  }
+  p.seja-text {
+    font-size: 1.8em;
+  }
+  
+  .contact-box-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  aside.aside-img{
+    width: 70%;
+    border-radius: 4vw;
+    font-size: 10vw;
+  }
+  .conosco{
+    font-size: 4.2vw;
+  }
+  input,
+  textarea {
+    font-size: 1em;
+  }
+  .formulario {
+    margin: 0;
+    max-width: 100%;
+  }
+  .button-box{
+    justify-content: center;
+  }
+  .botao{
+    font-size: 1em;
+    width: 70%!important;
+  }
+  footer {
+    justify-content: space-evenly;
+    height: 10vh;
+    font-size: 4vw;
+    text-align: center;
+    
+  }
+  .footer-text {
+      width: 60%;
+  }
+  .box-icons {  
+    font-size: 1.5em;
+      width: 30%;
+      gap: 2vw;
+      justify-content: center;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .track-the-pack {
+    width: 100%;
+    font-size: 1.5em;
+  }
+  .track-the-pack input {
+    height: 4vh;
+    font-size: 50%;
+  }
+  .formulario {
+    margin: 0;
+  }
+  .button-box{
+    justify-content: center;
+  }
+  .botao{
+    font-size: .8em;
+    width: 80%!important;
+  }
+ 
 }
 
 @media only screen and (min-width: 1000px) {
@@ -491,6 +590,9 @@ textarea {
     width: 50%;
   }
 }
+
+
+
 
 /* Key frames */
 
