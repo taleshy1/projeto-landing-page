@@ -1,325 +1,502 @@
 /* Importando fonte */
 @font-face {
-    font-family: caros;
-    src: url(../assets/fonts/CarosSoftBold.otf);
+  font-family: caros;
+  src: url(../assets/fonts/CarosSoftBold.otf);
 }
 @font-face {
-    font-family: intro;
-    src: url(../assets/fonts/IntroDemo-BlackCAPS.otf);
+  font-family: intro;
+  src: url(../assets/fonts/IntroDemo-BlackCAPS.otf);
 }
 
 /* Variaveis */
-:root{
-    --backgroundHeader: #111111;
-    --textColor: #ffffff;
-    --redColor: #e13648;
-
+:root {
+  --backgroundHeader: #111111;
+  --textColor: #ffffff;
+  --redColor: #e13648;
 }
 /* Zerando os valores de margem padrao do navegador, e definindo o tamanho da caixa para "até a borda" */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'caros', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "caros", sans-serif;
 }
 
 /* estilizando o header */
 .body-until-footer {
-    height: 100vh;
-    max-width: 100vw;
-    background-color: var(--textColor);
-
+  height: 100vh;
+  max-width: 100vw;
+  background-color: var(--textColor);
 }
+
 header {
-    display: flex;
-    height: 15%;
-    width: 100%;
-    background-color: var(--backgroundHeader);
-    align-items: center;
-    justify-content: space-between;
-    box-shadow:0 10px 16px 0 rgba(0, 0, 0, 0.137),0 6px 20px 0 rgba(0,0,0,0.19)
+  display: flex;
+  height: 15vh;
+  width: 100%;
+  background-color: var(--backgroundHeader);
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.137),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-nav{
-    /* background-color: aliceblue; */
-    width: 95%;
-    height: 90%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    
+nav {
+  width: 95%;
+  height: 90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 div.anchor-box {
-    display: flex;
-    gap: 2%;
+  display: flex;
+  gap: 2%;
 }
 
 div#LogoMarca {
-    margin-left: 5%;
-    width: 5%;
+  margin-left: 5%;
+  width: 5%;
 }
 
 div#LogoMarca img {
-    width: 100%;
+  width: 100%;
 }
 
 /* Caixa dos links */
 header div.links-cabecalho {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 /* estilização e volta do efeito do link */
 header div a {
-    transition: transform .5s;
-    text-decoration: none;
-    font-size: 1.4vw;
-    color: var(--textColor);
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.178);
-
+  transition: transform 0.5s;
+  text-decoration: none;
+  font-size: 1.4vw;
+  color: var(--textColor);
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.178);
 }
 /* efeitos dos links */
-header>nav>div a:hover{
-    transition: transform .5s;
-    transform: scale(1.2) ;
+header > nav > div a:hover {
+  transition: transform 0.5s;
+  transform: scale(1.2);
 }
 /* caixa dos botões */
 
 /* Estilização dos botões */
 
-.login-register-box{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
-    gap: 1vh;
-    /* background-color: antiquewhite; */
-    width: 30%;
+.login-register-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  gap: 1vh;
+  /* background-color: antiquewhite; */
+  width: 30%;
 }
-.register{
-    font-size: 1.2vw;
-    
+.register {
+  font-size: 1.2vw;
 }
 .register:hover {
-    transition: transform .5s;
-    transform: scale(1.1) ;
+  transition: transform 0.5s;
+  transform: scale(1.1);
 }
 
- a.button-login {
-    text-align: center;
-    text-decoration: none;
-    color: var(--textColor);
-    font-size: 1.2vw;
-    padding: 5% 25% ;
-    border-radius: 1vw;
-    background-color: var(--redColor);
-    transition: transform .5s;
+a.button-login {
+  text-align: center;
+  text-decoration: none;
+  color: var(--textColor);
+  font-size: 1.2vw;
+  padding: 5% 25%;
+  border-radius: 1vw;
+  background-color: var(--redColor);
+  transition: transform 0.5s;
 }
 
 /* animação dos botões */
- a.button-login:hover{
-     transition: transform .5s;
-     transform: scale(1.2) ;
+a.button-login:hover {
+  transition: transform 0.5s;
+  transform: scale(1.2);
 }
 
-.btn_icon_header{
-    background: transparent;
-    border: none;
-    color: var(--textColor);
-    cursor: pointer;
-    display: none;
+.btn_icon_header {
+  background: transparent;
+  border: none;
+  color: var(--textColor);
+  cursor: pointer;
+  display: none;
 }
 
 /* Começando a estilizar a main */
 .container {
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
+  box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.137),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 section#presentacion {
-    background-image: url(../assets/Fundo.png);
-    background-repeat: no-repeat;
-    background-color: #cccccc;
-    height: 100%;
-    width: 100%;
-    background-position: center;
-    background-size: cover;
+  background-image: url(../assets/Fundo.png);
+  background-repeat: no-repeat;
+  background-color: #cccccc;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
 }
 
-section#presentacion img.camiao{
-    width: 100%;
-    height: 100%;
-    position: relative;
+section#presentacion img.camiao {
+  width: 100%;
+  position: relative;
 }
 
 .text-presentacion {
-    position: absolute;
-    right: 0;
-    margin: 4% 1.4% 0 0;
-    text-align: end;
-    font-size: 6.1vw;
-    letter-spacing: .01vw;
-    font-family: intro;
-    color: var(--textColor);
-    line-height: 80%;
-
+  position: absolute;
+  right: 0;
+  margin: 4% 1.4% 0 0;
+  text-align: end;
+  font-size: 6.1vw;
+  letter-spacing: 0.01vw;
+  font-family: intro;
+  color: var(--textColor);
+  line-height: 80%;
 }
 
 .mova-sua-entrega {
-    font-size: 90%;
-    line-height: 100%;
-    font-family: intro;
+  font-size: 90%;
+  line-height: 100%;
+  font-family: intro;
 }
 
 .text-presentacion span.pra-frente {
-    font-size: 120%;
-    font-family: intro;
+  font-size: 120%;
+  font-family: intro;
 }
 
-.logo-camiao{
-    width: 100%;
-    position: absolute; 
-    left: 0;
-    top: 14%;
-    margin-top: 6%;
+.logo-camiao {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 14%;
+  margin-top: 6%;
 }
 
 .box-around-itens {
-    background-color: var(--redColor);
-    padding: 3%;
-    display: flex;
-    justify-content: space-around;
+  background-color: var(--redColor);
+  padding: 3%;
+  display: flex;
+  justify-content: space-around;
 }
 
 article {
-    padding: 2%;
-    background-color: var(--backgroundHeader);
-    color: var(--textColor);
-    max-height: 100%;
+  padding: 2%;
+  background-color: var(--backgroundHeader);
+  color: var(--textColor);
+  max-height: 100%;
 }
-.track-the-pack{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    font-size: 2vw;
-    line-height: 110%;
-    width: 35%;
+.track-the-pack {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-size: 2vw;
+  line-height: 110%;
+  width: 35%;
 }
 .track-the-pack p {
-    width: 100%;
+  width: 100%;
 }
 
-.text-and-image-sided{
-    font-size: 4vw;
-    width: 100%;
+.text-and-image-sided {
+  font-size: 4vw;
+  width: 100%;
+  display: flex;
+  gap: 2%;
+  align-items: center;
 }
-.text-and-image-sided img{
-    width: 12%;
+.text-and-image-sided img {
+  width: 10%;
 }
 
-.track-the-pack input{
-    background: url(../assets/seta-fundp-branco.png)  no-repeat right / 20% white ;
-    padding-left: 2%;
-    border: .3vw red solid ;
-    width: 100%;
-    height: 160%;
-    color: var(--redColor);
-    font-size: 60%;
-    margin-top: 2%;
-    /* border-radius: 2vw; */
+.track-the-pack input {
+  background: url(../assets/seta-fundp-branco.png) no-repeat right / 20% white;
+  padding-left: 2%;
+  border: 0.3vw var(--redColor) solid;
+  width: 100%;
+  height: 160%;
+  color: var(--redColor);
+  font-size: 60%;
+  margin-top: 2%;
+  /* border-radius: 2vw; */
 }
 
 .track-the-pack input::placeholder {
-    color: var(--redColor);
+  color: var(--redColor);
 }
 
 .send-the-pack {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 2vw;
-    line-height: 140%;
-    padding: 2% 0;
-    width: 20%;
-    
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2vw;
+  line-height: 140%;
+  padding: 2% 0;
+  width: 20%;
 }
 p.envie-text {
-    font-size: 4vw;
+  font-size: 4vw;
 }
-.send-the-pack a{
-    text-align: center;
-    width: 40%;
+.send-the-pack a {
+  text-align: center;
+  width: 40%;
 }
 
 .send-the-pack img {
-    margin-top: 4%;
-    width: 100%;
-    border-bottom: 1px solid var(--redColor);
-    transition: transform .5s ease-in-out;
+  margin-top: 4%;
+  width: 100%;
+  border-bottom: 1px solid var(--redColor);
+  transition: transform 0.5s ease-in-out;
 }
 
 .send-the-pack img:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .work-here {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 2vw;
-    line-height: 140%;
-    padding: 2% 0;
-    width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2vw;
+  line-height: 140%;
+  padding: 2% 0;
+  width: 20%;
 }
 
 p.seja-text {
-    font-size: 4vw;
+  font-size: 4vw;
 }
 
-.work-here a{
-    width: 28%;
-    text-align: center;
+.work-here a {
+  width: 28%;
+  text-align: center;
 }
 
 .work-here img {
-    margin-top: 4%;
-    width: 100%;
-    border-bottom: 1px solid var(--redColor);
-    transition: transform .5s ease-in-out;
+  margin-top: 4%;
+  width: 100%;
+  border-bottom: 1px solid var(--redColor);
+  transition: transform 0.5s ease-in-out;
 }
 
 .work-here a img:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
-@media screen and (max-width: 1000px) {
-    div#LogoMarca {
-        width: 15%;
-        margin-left: 4%;
-    }
-    header div a {
-        font-size: 2.5vw;
-   
-    }
-    a.button-login {
-        font-size: 2.5vw;
-    }
-    .login-register-box{
-        gap: 1vh;
-    }
+.contact-box-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* gap: 12%; */
+}
 
+aside.aside-img {
+  padding: 2% 0;
+  background-color: var(--backgroundHeader);
+  color: var(--textColor);
+  height: 80%;
+  font-size: 6vw;
+  display: flex;
+  align-items: center;
+  line-height: 65%;
+  margin: 7vh auto;
+  width: 32%;
+  justify-content: center;
+  gap: 6%;
+}
+
+.conosco {
+  font-size: 2.5vw;
+}
+
+aside.aside-img img {
+  width: 37%;
+  transition: transform 0.5s ease-in-out;
+}
+aside.aside-img img:hover {
+  transition: transform 0.5s ease-in-out;
+  transform: scale(1.1);
+  cursor: help;
+}
+
+footer {
+  display: flex;
+  color: var(--textColor);
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+  bottom: 0;
+  background-color: var(--backgroundHeader);
+  width: 100%;
+  height: 10vh;
+  font-size: 1.8vw;
+  text-align: center;
+  
+}
+.footer-text {
+    display: flex;
+    justify-content: flex-end;
+    width: 40%;
+}
+.box-icons {
     
+    width: 30%;
+    display: flex;
+    color: var(--redColor);
+    gap: 1vw;
+    justify-content: center;
+}
+
+.box-icons a {
+    text-decoration: none;
+    color: var(--redColor);
+    transition: all .5s ease-in-out;
+}
+
+.box-icons a:hover {
+    color: white;
+    transition: all .5s ease-in-out;
+    transform: scale(1.1, 1.1);
+}
+
+
+/*Formulário*/
+
+input,
+textarea {
+  border: 0;
+  outline: 0;
+  font-size: 1.2vw;
+  background: transparent;
+  color: var(--backgroundHeader);
+  position: relative;
+}
+
+textarea {
+  resize: none;
+}
+
+.formulario {
+  margin: 6vh 6vw 2vh 0;
+  max-width: 47%;
+  border-radius: 2px;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-item {
+  position: relative;
+  width: 100%;
+  padding: 1em;
+}
+.form-item .textarea {
+  height: 10em;
+}
+.form-item .input,
+.form-item .textarea {
+  display: block;
+  padding: 1em;
+  width: 100%;
+  transition: all 0.3s;
+  border-bottom: 2px solid var(--redColor);
+}
+
+.form-item .input:focus,
+.form-item .textarea:focus {
+  border-bottom: 2px solid #f60101;
+}
+
+.form-item .input:valid + .label,
+.form-item .input:focus + .label,
+.form-item .textarea:valid + .label,
+.form-item .textarea:focus + .label {
+  top: 1em;
+  left: 1em;
+  font-size: 0.7em;
+}
+
+.form-item .input:valid,
+.form-item .textarea:valid {
+  border-bottom: 2px solid var(--redColor);
+}
+
+.form-item .label {
+  position: absolute;
+  top: 2em;
+  left: 2em;
+  text-transform: capitalize;
+  transition: all 0.3s;
+}
+
+.form-item .botao {
+  display: block;
+  width: 12%;
+  padding: 0.8em 0.6em;
+  /* border:2px var(--redColor) solid; */
+  border-radius: 3px;
+  color: var(--textColor);
+  cursor: pointer;
+  transition: all 0.3s;
+  background-color: var(--backgroundHeader);
+}
+
+.button-box {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.form-item .botao:hover {
+  background: var(--redColor);
+  color: #ffffff;
+}
+
+.form-item .botao:active {
+  background-color: #ff9000;
+  color: #ffffff;
+  border: 2px #ff9000 solid;
+}
+/*Formulário*/
+
+@media screen and (max-width: 1000px) {
+  div#LogoMarca {
+    width: 15%;
+    margin-left: 4%;
+  }
+  header div a {
+    font-size: 2.5vw;
+  }
+  a.button-login {
+    font-size: 2.5vw;
+  }
+  .login-register-box {
+    gap: 1vh;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .form-item.col-responsive {
+    width: 50%;
+  }
 }
 
 /* Key frames */
 
-
 .fade-in {
-    -webkit-animation: fade-in 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-            animation: fade-in 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  -webkit-animation: fade-in 1.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: fade-in 1.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 @-webkit-keyframes fade-in {
   0% {
@@ -337,4 +514,3 @@ p.seja-text {
     opacity: 1;
   }
 }
-
