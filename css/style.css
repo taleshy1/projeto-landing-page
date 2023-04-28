@@ -21,6 +21,10 @@
   box-sizing: border-box;
   font-family: "caros", sans-serif;
 }
+/* animação de scroll */
+html {
+  scroll-behavior: smooth;
+}
 
 /* estilizando o header */
 .body-until-footer {
@@ -50,6 +54,7 @@ nav {
 
 div.anchor-box {
   display: flex;
+  align-items: center;
   gap: 2%;
 }
 
@@ -62,7 +67,14 @@ div#LogoMarca img {
   width: 100%;
 }
 
+/* .mobile-nav  {
+  display: none;
+  color: var(--redColor);
+} */
+
 /* Caixa dos links */
+
+
 header div.links-cabecalho {
   width: 100%;
   display: flex;
@@ -218,15 +230,39 @@ article {
 }
 
 .track-the-pack input {
-  background: url(../assets/seta-fundp-branco.png) no-repeat right / 20% white;
+  /* background: url(../assets/seta-fundp-branco.png) no-repeat right / 20% white; */
+  background-color: var(--textColor);
   padding-left: 2%;
   border: 0.3vw var(--redColor) solid;
   width: 100%;
-  height: 160%;
+  height: 100%;
   color: var(--redColor);
   font-size: 60%;
   margin-top: 2%;
   /* border-radius: 2vw; */
+}
+
+.botao-rastrear {
+ margin-top: .5vh;
+  width: 100%;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.botao-rastrear a{
+  background-color: var(--redColor);
+  text-decoration: none;
+  color: var(--textColor);
+  border-radius: 1vw;
+  padding: 0 3%;
+  transition: all .5s ease-in-out;
+}
+
+.botao-rastrear a:hover {
+  background-color: var(--textColor);
+  color: var(--redColor);
+  transform: scale(1.1);
 }
 
 .track-the-pack input::placeholder {
@@ -473,18 +509,28 @@ textarea {
 
 
 @media screen and (max-width: 1000px) {
+  
   div#LogoMarca {
+    display: flex;
+    align-items: center;
     width: 15%;
-    /* margin-left: 4%; */
   }
   header div a {
     font-size: 2.5vw;
   }
+  header div.links-cabecalho a {
+    text-align: center;
+  }
+ 
   a.button-login {
     font-size: 2.5vw;
   }
   .login-register-box {
     gap: 1vh;
+  }
+  .register{
+    text-align: center;
+    font-size: .5em;
   }
   .box-around-itens {
     flex-direction: column;
