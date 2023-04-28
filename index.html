@@ -16,22 +16,18 @@
         <nav>
           <div class="anchor-box">
             <div id="LogoMarca">
-              <a href="">
+              <a href="#presentacion">
                 <img src="/assets/Logo.png" alt="Logo Log4" />
               </a>
             </div>
-            <div></div>
-
             <div class="links-cabecalho">
-              <!-- <a href="">SOBRE NÓS</a> -->
-              <a href="">ENVIAR PACOTE</a>
-              <a href="">RASTREAR PACOTE</a>
-              <a href="">FALE CONOSCO</a>
+              <a href="#track">RASTREAR PACOTE</a>
+              <a href="#contact">FALE CONOSCO</a>
             </div>
-          </div>
           <div class="login-register-box">
-            <a href="" class="button-login">LOGIN</a>
-            <a href="" class="register">CADASTRE-SE</a>
+            <a href="" onclick="login(event)" class="button-login">LOGIN</a>
+            <a href="" onclick="register(event)" class="register">CADASTRE-SE</a>
+          </div>
           </div>
         </nav>
       </header>
@@ -48,31 +44,40 @@
           <img src="assets/Logo Camiao.png" alt="" class="logo-camiao" />
         </section>
 
-        <section class="container">
+        <section class="container" id="track">
+          
           <div class="box-around-itens">
             <article class="track-the-pack">
               <p class="text-and-image-sided">
                 RASTREIE <img src="assets/caixa-de-entrega.png" alt="" />
               </p>
               <p>SEU PACOTE</p>
-              <form action="track.js">
+              <form >
                 <input
                   type="text"
-                  placeholder="DIGITE O SEU CODIGO DE RASTREIO"
+                  placeholder="DIGITE O SEU CODIGO DE RASTREIO" 
+                  id="track-code"
+                  autocomplete="off"
                 />
+                <div class="botao-rastrear">
+                <a href="" onclick="rastrear(event)" >
+                  RASTREAR
+                </a>
+              </div>
               </form>
+            
             </article>
 
             <article class="send-the-pack">
               <p class="envie-text">ENVIE</p>
               <p>SEU PACOTE</p>
-              <a href=""><img src="assets/caminhao-de-entrega.png" alt="" /></a>
+              <a href="" onclick="envieSeuProduto(event)"><img src="assets/caminhao-de-entrega.png" alt="" /></a>
             </article>
 
             <article class="work-here">
               <p class="seja-text">SEJA</p>
               <p>ENTREGADOR</p>
-              <a href=""> <img src="assets/entregador.png" alt="" /></a>
+              <a href="" onclick="trabalheConosco(event)"> <img src="assets/entregador.png" alt="" /></a>
             </article>
           </div>
         </section>
@@ -88,7 +93,7 @@
             </aside>
 
             <aside class="formulario">
-                <form class="form" action="">
+                <form class="form"  >
                   <div class="form-item col-responsive">
                     <input
                       class="input"
@@ -136,7 +141,7 @@
                   </div>
 
                   <div class="form-item button-box">
-                    <input class="botao" type="submit" value="Enviar" />
+                    <input class="botao" type="submit"  onclick="enviarForm(event)" />
                   </div>
                 </form>
             </aside>
@@ -145,12 +150,12 @@
       </main>
       <footer >
         <p class="footer-text">
-          Developed by Tales Patric <br>Designed by Jandisu 
+          Developed by Tales Patric
         </p>
         <div class="box-icons">
-          <a href="" class="fa-brands fa-instagram"></a>
-          <a href="" class="fa-brands fa-facebook"></a>
-          <a href="" class="fa-brands fa-whatsapp"></a>
+          <a href="https://www.instagram.com/" target="_blank" class="fa-brands fa-instagram"></a>
+          <a href="https://www.facebook.com" target="_blank" class="fa-brands fa-facebook"></a>
+          <a href="https:// www.web.whatsapp.com" target="_blank" class="fa-brands fa-whatsapp"></a>
         </div>
       </footer>
     </div>
